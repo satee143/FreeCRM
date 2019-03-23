@@ -23,7 +23,7 @@ class Testlogin():
         home.click_name()
         time.sleep(2)
         home.logout_link()
-        time.sleep(3)
+        time.sleep(2)
 
 
 
