@@ -22,9 +22,3 @@ class loginpage():
     def click_login(self):
         self.driver.find_element_by_id(self.login_button_id).click()
 ####### HOME PAGE FUNCTIONS ######
-    def click_name(self):
-        self.driver.find_element_by_xpath(self.name_link_xpath).click()
-
-    def logout_link(self):
-        self.driver.find_element_by_xpath(self.logout_link_xpath).click()
-

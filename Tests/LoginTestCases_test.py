@@ -1,5 +1,5 @@
 import pytest
-
+from Pages.Homepage import homepage
 from Pages.Loginpage import loginpage
 from Utils import utils as utils
 from Utils import readexcel
@@ -19,9 +19,10 @@ class Testlogin():
         login.enter_password(data[1])
         login.click_login()
         time.sleep(2)
-        login.click_name()
+        home=homepage(driver)
+        home.click_name()
         time.sleep(2)
-        login.logout_link()
+        home.logout_link()
         time.sleep(3)
 
 
